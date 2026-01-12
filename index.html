@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>OHM — Electronic Arts & Music | Albany</title>
+    <meta
+      name="description"
+      content="OHM advances electronic art & music culture in Albany — a creative hub for locals & global talent."
+    />
+    <meta name="theme-color" content="#07070a" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner" aria-label="Main header">
+      <a class="brand" href="#hero">OHM</a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#donate">Donate</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero with canvas. There's also a static fallback element shown if WebGL isn't available. -->
+      <section id="hero" class="hero" aria-labelledby="ohm-title">
+        <canvas id="glcanvas" class="gl-canvas" aria-hidden="true"></canvas>
+
+        <!-- static fallback shown only when JS detects no WebGL (via .no-webgl on body) -->
+        <div id="heroStatic" class="hero-static" hidden>
+          <div class="hero-content">
+            <h1 id="ohm-title" class="title">OHM</h1>
+            <p class="subtitle">
+              Advancing electronic art & music in the Capital Region — a
+              creative hub for locals & global talent.
+            </p>
+            <div class="hero-ctas">
+              <a class="cta" href="#mission">Learn More</a>
+              <a class="cta ghost" href="#donate">Donate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content" id="heroContent">
+          <h1 id="ohm-title-js" class="title">OHM</h1>
+          <p class="subtitle">
+            Advancing electronic art & music in the Capital Region — a creative
+            hub for locals & global talent.
+          </p>
+          <div class="hero-ctas">
+            <a class="cta" href="#mission">Learn More</a>
+            <a class="cta ghost" href="#donate">Donate</a>
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">Scroll</div>
+      </section>
+
+      <!-- Mission / Vision -->
+      <section id="mission" class="panel reveal">
+        <div class="container">
+          <h2>Vision</h2>
+          <p class="lead">
+            OHM envisions a thriving Capital Region of New York where electronic
+            music and arts serve as a vibrant cultural cornerstone, uniting
+            local creatives with global talent and inspiring future generations
+            of artists.
+          </p>
+
+          <h3>Mission</h3>
+          <p>
+            OHM is dedicated to advancing electronic art & music culture in
+            Albany by providing a cutting-edge, multi-disciplinary venue that
+            acts as a creative hub and community space for residents and
+            visitors. Through fair artist compensation, innovative programming,
+            and active community engagement, our goal is to nurture a creative
+            environment that uplifts local talent, promotes skills-sharing,
+            enriches the cultural landscape, and sparks a new era of creativity
+            in the Capital Region.
+          </p>
+        </div>
+      </section>
+
+      <!-- Donations -->
+      <section id="donate" class="panel reveal">
+        <div class="container">
+          <h2>Donations</h2>
+          <p>
+            The OHM Organization is a grassroots nonprofit dedicated to
+            advancing electronic art and music culture in the NY Capital Region.
+            Our mission is to nurture a creative environment that uplifts local
+            talent, encourages skill-sharing, and enriches the cultural
+            landscape through collaboration across all styles and art forms. We
+            believe in building more than just events — we’re cultivating a
+            lasting community supported by positive values, shared resources,
+            and meaningful connections.
+          </p>
+
+          <div class="actions">
+            <a class="cta" href="#contact">Support OHM</a>
+            <a class="cta ghost" href="#shop">Buy Merch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop -->
+      <section id="shop" class="panel reveal">
+        <div class="container">
+          <h2>Shop</h2>
+          <p>
+            OHM is dedicated to advancing electronic art & music culture in
+            Albany by providing a cutting-edge, multi-disciplinary venue that
+            acts as a creative hub and community space for residents and
+            visitors. Support our work and represent the community — buy OHM
+            merch to support programming and artists.
+          </p>
+
+          <div class="cards">
+            <article class="card">
+              <strong>Merch</strong>
+              <p>Tees, stickers, and more — coming soon.</p>
+            </article>
+            <article class="card">
+              <strong>Support</strong>
+              <p>
+                All proceeds help fund programming, artist fees, and local
+                initiatives.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="panel reveal">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Reach out to connect with the team, share an idea, or learn more
+            about how you can get involved in building a vibrant, inclusive
+            future for electronic arts in the Capital Region.
+          </p>
+          <p>
+            <a class="muted-link" href="mailto:hello@example.com">Email Us</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <small>&copy; <span id="year"></span> OHM — All rights reserved.</small>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="no-js">
+        This site requires JavaScript to render the 3D hero. Please enable
+        JavaScript or view the static version.
+      </div>
+    </noscript>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
